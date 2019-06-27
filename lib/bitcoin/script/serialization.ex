@@ -31,8 +31,17 @@ defmodule Bitcoin.Script.Serialization do
   def parse(script, <<>>), do: script |> Enum.reverse
 
   # Opcode 0x01-0x4b: The next opcode bytes is data to be pushed onto the stack
+  def parse(script, << 0x00, bin :: binary >>) do
+    [bin | script] |> parse(<<>>)
+  end
+
   def parse(script, << size, bin :: binary >>) when size >= 0x01 and size <= 0x4b do
-    << data :: binary-size(size), bin :: binary >> = bin
+    << data :: binary-size(size), bin :: binary >> = if byte_size(bin) < size do
+      bin <> :binary.copy(<<0>>, size-byte_size(bin))
+    else
+      bin
+    end
+
     [data | script] |> parse(bin)
   end
 
