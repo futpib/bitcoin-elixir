@@ -1,4 +1,5 @@
-%{"binary": {:hex, :binary, "0.0.4", "dd077db70c0ded3e85c132b802338e14b80694684a7e2277666bfa4004b7fa66", [:mix], [], "hexpm"},
+%{
+  "binary": {:hex, :binary, "0.0.5", "20d816f7274ea34f1b673b4cff2fdb9ebec9391a7a68c349070d515c66b1b2cf", [:mix], [], "hexpm"},
   "connection": {:hex, :connection, "1.0.4", "a1cae72211f0eef17705aaededacac3eb30e6625b04a6117c1b2db6ace7d5976", [:mix], [], "hexpm"},
   "datastructures": {:hex, :datastructures, "0.2.8", "cd9f53bed18f1d9526689a9559676c682b5a3ba230c1e3de187182f4ff86899c", [:mix], [], "hexpm"},
   "db_connection": {:hex, :db_connection, "1.1.2", "2865c2a4bae0714e2213a0ce60a1b12d76a6efba0c51fbda59c9ab8d1accc7a8", [:mix], [{:connection, "~> 1.0.2", [hex: :connection, repo: "hexpm", optional: false]}, {:poolboy, "~> 1.5", [hex: :poolboy, repo: "hexpm", optional: true]}, {:sbroker, "~> 1.0", [hex: :sbroker, repo: "hexpm", optional: true]}], "hexpm"},
@@ -16,4 +17,5 @@
   "poolboy": {:hex, :poolboy, "1.5.1", "6b46163901cfd0a1b43d692657ed9d7e599853b3b21b95ae5ae0a777cf9b6ca8", [:rebar], [], "hexpm"},
   "postgrex": {:hex, :postgrex, "0.13.2", "2b88168fc6a5456a27bfb54ccf0ba4025d274841a7a3af5e5deb1b755d95154e", [:mix], [{:connection, "~> 1.0", [hex: :connection, repo: "hexpm", optional: false]}, {:db_connection, "~> 1.1", [hex: :db_connection, repo: "hexpm", optional: false]}, {:decimal, "~> 1.0", [hex: :decimal, repo: "hexpm", optional: false]}], "hexpm"},
   "reagent": {:git, "https://github.com/meh/reagent.git", "d57b099e1e47ea58bf57d40446f5a88812967b77", []},
-  "socket": {:hex, :socket, "0.3.11", "46004230045c2207c0b90adb9abe3ba15a83e634b341ac37af39a4adf48ed00b", [:mix], [], "hexpm"}}
+  "socket": {:hex, :socket, "0.3.11", "46004230045c2207c0b90adb9abe3ba15a83e634b341ac37af39a4adf48ed00b", [:mix], [], "hexpm"},
+}

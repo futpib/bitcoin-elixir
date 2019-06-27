@@ -47,7 +47,7 @@ defmodule Bitcoin.Mixfile do
      {:reagent, github: "meh/reagent"},
 
      # Binary handling
-     {:binary, "0.0.4"},
+     {:binary, "0.0.5"},
 
      # JSON library, used to decode test cases
      {:poison, "~> 3.0", only: [:dev, :test]},
