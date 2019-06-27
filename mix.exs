@@ -62,7 +62,7 @@ defmodule Bitcoin.Mixfile do
      {:libsecp256k1, [github: "mbrix/libsecp256k1", manager: :rebar, optional: true]},
 
      # Node postgres storage engine
-     {:ecto, github: "elixir-ecto/ecto", optional: true}, # can be switched to hex once 2.2 is out
+     {:ecto_sql, "~> 3.0", optional: true},
      {:postgrex, "~> 0.13", optional: true}
     ]
   end
